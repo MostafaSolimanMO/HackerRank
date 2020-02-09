@@ -1,4 +1,4 @@
-package Java;
+package Problem.Solving.Easy;
 
 import java.util.Scanner;
 
@@ -6,6 +6,7 @@ public class Cavity_Map {
 
     private static final Scanner scanner = new Scanner(System.in);
 
+    // Not pass all test cases, Still working on it.
     static String[] cavityMap(String[] grid) {
         for (int i = 1; i < grid.length - 1; i++) {
             int theCavity;
