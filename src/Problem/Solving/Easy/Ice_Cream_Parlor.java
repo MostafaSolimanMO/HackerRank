@@ -5,7 +5,6 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class Ice_Cream_Parlor {
-    private static final Scanner scanner = new Scanner(System.in);
 
     static int[] icecreamParlor(int m, int[] arr) {
         int[] res = new int[2];
