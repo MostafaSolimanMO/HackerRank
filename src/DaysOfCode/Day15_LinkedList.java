@@ -2,7 +2,7 @@ package DaysOfCode;
 
 import java.util.Scanner;
 
-public class Linked_List {
+public class Day15_LinkedList {
     class Node {
         int data;
         Node next;
@@ -16,7 +16,9 @@ public class Linked_List {
     class Solution {
 
         public Node insert(Node head, int data) {
-            //Complete this method
+            if (head == null) return new Node(data);
+            else if (head.next == null) head.next = new Node(data);
+            else insert(head.next, data);
             return head;
         }
 
@@ -28,7 +30,7 @@ public class Linked_List {
             }
         }
 
-        public void main(String args[]) {
+        public void main(String[] args) {
             Scanner sc = new Scanner(System.in);
             Node head = null;
             int N = sc.nextInt();
